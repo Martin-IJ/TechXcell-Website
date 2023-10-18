@@ -9,6 +9,7 @@ module.exports = {
       },
       textColor: {
         'default': '#F35444',
+        'faded-black': '#666666'
       },
     },
   },
