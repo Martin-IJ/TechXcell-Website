@@ -4,7 +4,12 @@ import { fadeIn } from "../variants";
 
 const Prototype = () => {
   return (
-    <div className="bg-main-color h-screen flex">
+    <div className="relative isolate overflow-hidden bg-main-color h-screen flex">
+      <div className="absolute -z-10 -bottom-32 drop-shadow-xl">
+        <h1 className=" text-[#161823] drop-shadow-lg text-center text-[20rem] font-black">
+          CREATIVE <br /> SOLUTION
+        </h1>
+      </div>
       <div className="max-w-[85%] w-full space-y-10 m-auto text-center text-white">
         <motion.h1
           variants={fadeIn("down", 0.3)}
@@ -36,15 +41,15 @@ const Prototype = () => {
           action=""
           className="space-y-7 max-w-[600px] w-full m-auto text-white"
         >
-          <div className="w-full flex justify-between gap-5">
+          <div className="w-full md:flex justify-between space-y-5 md:space-y-0 gap-5">
             <input
               type="text"
-              className="bg-inherit border rounded-[5.5rem] py-4 px-10 w-[50%]"
+              className="bg-inherit border rounded-[5.5rem] py-4 px-10 w-full md:w-[50%]"
               placeholder="First name"
             />
             <input
               type="text"
-              className="bg-inherit border rounded-[5.5rem] py-4 px-10 w-[50%]"
+              className="bg-inherit border rounded-[5.5rem] py-4 px-10 w-full md:w-[50%]"
               placeholder="Phone number"
             />
           </div>

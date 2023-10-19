@@ -9,7 +9,7 @@ const Statistics = () => {
     threshold: 0.5,
   });
   return (
-    <div className="relative overflow-x-hidden bg-white" ref={ref}>
+    <div className="relative isolate overflow-x-hidden bg-white" ref={ref}>
       <div className="max-w-[85%] w-full m-auto flex justify-center lg:justify-between gap-10 flex-wrap text-center py-20 text-6xl font-semibold">
         <p className="absolute hidden md:block overflow-hidden statistics-text-shadow text-white -z-10 bottom-0 left-10 text-[15rem] lg:text-[20rem] font-bold">
           Statistics

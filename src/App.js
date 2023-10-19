@@ -5,6 +5,9 @@ import About from './components/About';
 import Statistics from './components/Statistics';
 import WhyPage from './components/WhyPage';
 import Prototype from './components/Prototype';
+import HowPage from './components/HowPage';
+import Team from './components/Team';
+import Packages from './components/Packages';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <Statistics />
       <WhyPage />
       <Prototype />
+      <HowPage />
+      <Team />
+      <Packages />
     </div>
   );
 }

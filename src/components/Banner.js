@@ -6,6 +6,11 @@ import { fadeIn } from "../variants";
 const Banner = () => {
   return (
     <div className="relative isolate bg-main-color flex items-center overflow-hidden">
+      <div className="absolute -z-20 -bottom-32 drop-shadow-xl">
+        <h1 className=" text-[#161823] drop-shadow-lg text-center text-[20rem] font-black">
+          TechXcell <br /> SOLUTION
+        </h1>
+      </div>
       <motion.img
         variants={fadeIn("left", 0.3)}
         initial="hidden"
