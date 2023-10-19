@@ -13,8 +13,8 @@ const Footer = () => {
     e.preventDefault();
   };
   return (
-    <footer className="py-32 overflow-hidden">
-      <div className="max-w-[85%] w-full m-auto text-start text-white space-y-20 md:space-y-0 md:flex gap-10">
+    <footer className="overflow-hidden">
+      <div className="max-w-[85%] py-32 w-full m-auto text-start text-white space-y-20 md:space-y-0 md:flex gap-10">
         <motion.div
           variants={fadeIn("right", 0.3)}
           initial="hidden"
@@ -23,7 +23,7 @@ const Footer = () => {
           className="space-y-5 md:flex-1"
         >
           <h1 className="text-2xl font-bold border-b pb-5">About</h1>
-          <p>
+          <p className="text-[#7E8499]">
             We have much planned for the future, working with great clients and
             continued software development
           </p>
@@ -62,7 +62,7 @@ const Footer = () => {
           className="space-y-5 md:flex-1"
         >
           <h1 className="text-2xl font-bold border-b pb-5">About</h1>
-          <p>Join our mailing list to receive news and announcements</p>
+          <p className="text-[#7E8499]">Join our mailing list to receive news and announcements</p>
           <form onSubmit={handleClick} className="space-y-5">
             <input
               type="email"
@@ -74,6 +74,9 @@ const Footer = () => {
             </button>
           </form>
         </motion.div>
+      </div>
+      <div className="text-[#7E8499] bg-[#1B2032] p-5 text-center">
+        <p>Copyright &copy; 2023 All Rights Reserved. Developed At <span className="underline cursor-pointer">TechXcell</span></p>
       </div>
     </footer>
   );
