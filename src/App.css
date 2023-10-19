@@ -16,7 +16,12 @@
   border-radius: 30px;
 }
 
-.default-border:hover, .packages-border:hover{
+.go-border{
+  border: 2px solid #F35444;
+  border-radius: 4rem;
+}
+
+.default-border:hover, .packages-border:hover, .go-border:hover{
   color: white;
   background-color: #F35444;
   transition: .2s ease-in-out;
@@ -44,4 +49,21 @@
   background-image: url(./assets/Denyefa.jpg);
   background-size: cover;
   background-position: center;
+}
+
+/* NewsLetter */
+.newsletterBgr{
+  background-image: url(./assets//bgr.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-small-circle::before{
+  content: "";
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #F35444;
 }

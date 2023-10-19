@@ -1,11 +1,19 @@
 import React from "react";
+import Book from '../assets/book.png'
+import Flower from '../assets/flower.png'
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Prototype = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div className="relative isolate overflow-hidden bg-main-color h-screen flex">
-      <div className="absolute -z-10 -bottom-32 drop-shadow-xl">
+      <img src={Book} alt="" className="absolute -z-10 bottom-10 -left-48 drop-shadow-xl" />
+      <img src={Flower} alt="" className="absolute -z-10 -bottom-40 -right-60 md:-right-40 mix-blend-soft-light" />
+      <div className="absolute -z-20 -bottom-32 drop-shadow-xl">
         <h1 className=" text-[#161823] drop-shadow-lg text-center text-[20rem] font-black">
           CREATIVE <br /> SOLUTION
         </h1>
@@ -39,6 +47,7 @@ const Prototype = () => {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
           action=""
+          onSubmit={handleClick}
           className="space-y-7 max-w-[600px] w-full m-auto text-white"
         >
           <div className="w-full md:flex justify-between space-y-5 md:space-y-0 gap-5">

@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 
 const Team = () => {
   return (
-    <div className="bg-white py-20">
+    <div className="bg-white py-20 overflow-hidden">
       <div className="max-w-[85%] w-full m-auto text-center space-y-7">
         <motion.h1
           variants={fadeIn("down", 0.3)}
@@ -40,7 +40,7 @@ const Team = () => {
                   <BiLogoFacebook />
                 </div>
                 <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  <a href="https://twitter.com/iceDeCoder" target="_blank">
+                  <a href="https://twitter.com/iceDeCoder" target="_blank" rel="noreferrer">
                     <BiLogoTwitter />
                   </a>
                 </div>

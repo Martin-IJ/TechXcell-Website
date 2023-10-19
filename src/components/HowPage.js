@@ -9,7 +9,7 @@ import { fadeIn } from "../variants";
 
 const HowPage = () => {
   return (
-    <div className="bg-white py-20">
+    <div className="bg-white py-20 overflow-hidden">
       <div className="max-w-[85%] w-full m-auto text-center space-y-7">
         <motion.h1
           variants={fadeIn("down", 0.3)}
@@ -35,7 +35,7 @@ const HowPage = () => {
             STEPS
           </p>
           <motion.div
-            variants={fadeIn("down", 0.3)}
+            variants={fadeIn("up", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}

@@ -7,32 +7,35 @@ import { fadeIn } from "../variants";
 
 const WhyPage = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-hidden">
       <div className="max-w-[85%] w-full m-auto text-center py-20 flex flex-col gap-10">
-        <motion.h1 
-        variants={fadeIn("down", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="text-5xl">
+        <motion.h1
+          variants={fadeIn("down", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="text-5xl"
+        >
           Why <span className="text-default">Choose</span> Us
         </motion.h1>
-        <motion.p 
-        variants={fadeIn("down", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="max-w-[560px] w-full m-auto text-faded-black">
+        <motion.p
+          variants={fadeIn("down", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="max-w-[560px] w-full m-auto text-faded-black"
+        >
           Biggest brands in the automotive industry recommend our company as a
           reliable corporate website developer
         </motion.p>
         <div className="flex justify-center lg:justify-between flex-wrap gap-10">
-          <motion.div 
-          variants={fadeIn("right", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="border rounded-xl p-10 w-full md:w-[70%] lg:w-[30%]">
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="border rounded-xl p-10 w-full md:w-[70%] lg:w-[30%]"
+          >
             <div className="border-2 border-[#F35444] inline-flex p-4 rounded-full hover:text-default text-4xl">
               <PiAtomThin />
             </div>
@@ -42,12 +45,13 @@ const WhyPage = () => {
               companies trust us and in response we offer unique solutions.
             </p>
           </motion.div>
-          <motion.div 
-          variants={fadeIn("up", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="border rounded-xl p-10 w-full md:w-[70%] lg:w-[30%]">
+          <motion.div
+            variants={fadeIn("up", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="border rounded-xl p-10 w-full md:w-[70%] lg:w-[30%]"
+          >
             <div className="border-2 border-[#F35444] inline-flex p-4 rounded-full hover:text-default text-4xl">
               <LiaPeopleCarrySolid />
             </div>
@@ -58,12 +62,13 @@ const WhyPage = () => {
               functionality.
             </p>
           </motion.div>
-          <motion.div 
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="border rounded-xl p-10 w-full md:w-[70%] lg:w-[30%]">
+          <motion.div
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="border rounded-xl p-10 w-full md:w-[70%] lg:w-[30%]"
+          >
             <div className="border-2 border-[#F35444] inline-flex p-4 rounded-full hover:text-default text-4xl">
               <TbWorldCode />
             </div>

@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky z-50 inset-x-0 top-0 nav-container flex justify-center bg-[rgba(22,24,35,0.7)] backdrop-blur-lg border-b">
+    <div className="sticky z-50 inset-x-0 top-0 nav-container overflow-hidden flex justify-center bg-[rgba(22,24,35,0.7)] backdrop-blur-lg border-b">
       <div className="max-w-[85%] w-[100%] flex justify-between items-center py-5 text-white">
         <Link to="/">
           <img src={Logo} alt="logo" className="w-[150px]" />

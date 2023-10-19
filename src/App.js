@@ -8,6 +8,8 @@ import Prototype from './components/Prototype';
 import HowPage from './components/HowPage';
 import Team from './components/Team';
 import Packages from './components/Packages';
+import NewsLetter from './components/NewsLetter';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
       <HowPage />
       <Team />
       <Packages />
+      <NewsLetter />
+      <Footer />
     </div>
   );
 }
