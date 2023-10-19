@@ -10,7 +10,13 @@
   backdrop-filter: blur(5px);
 }
 
-.default-border:hover{
+.packages-border{
+  border: 2px solid #F35444;
+  padding: 10px 50px;
+  border-radius: 30px;
+}
+
+.default-border:hover, .packages-border:hover{
   color: white;
   background-color: #F35444;
   transition: .2s ease-in-out;
@@ -23,7 +29,7 @@
 
 /* Team Picture */
 .martins-team-picture{
-  background-image: url(./assets/IMG_9251.JPG);
+  background-image: url(./assets/Martins.JPG);
   background-size: cover;
   background-position: center;
 }
