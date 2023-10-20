@@ -62,7 +62,9 @@ const Footer = () => {
           className="space-y-5 md:flex-1"
         >
           <h1 className="text-2xl font-bold border-b pb-5">About</h1>
-          <p className="text-[#7E8499]">Join our mailing list to receive news and announcements</p>
+          <p className="text-[#7E8499]">
+            Join our mailing list to receive news and announcements
+          </p>
           <form onSubmit={handleClick} className="space-y-5">
             <input
               type="email"
@@ -76,7 +78,10 @@ const Footer = () => {
         </motion.div>
       </div>
       <div className="text-[#7E8499] bg-[#1B2032] p-5 text-center">
-        <p>Copyright &copy; 2023 All Rights Reserved. Developed At <span className="underline cursor-pointer">TechXcell</span></p>
+        <p>
+          Copyright &copy; 2023 All Rights Reserved. Developed At{" "}
+          <span className="underline cursor-pointer">TechXcell</span>
+        </p>
       </div>
     </footer>
   );
