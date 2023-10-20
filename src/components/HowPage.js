@@ -6,10 +6,15 @@ import { TbDeviceDesktopCode } from "react-icons/tb";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import ScrollToTop from "react-scroll-to-top";
+
 
 const HowPage = () => {
   return (
     <div className="bg-white py-20 overflow-hidden">
+           <ScrollToTop className='scroll' smooth top= '20'
+           width='40px'
+        />
       <div className="max-w-[85%] w-full m-auto text-center space-y-7">
         <motion.h1
           variants={fadeIn("down", 0.3)}
