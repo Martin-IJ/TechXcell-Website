@@ -99,7 +99,7 @@ const Team = () => {
                 </div>
               </div>
               <div className="flex flex-col justify-center w-full text-center bg-[#F6F7FB] rounded-b-2xl h-[30%]">
-                <p className="text-2xl font-semibold">Denyefa</p>
+                <p className="text-2xl font-semibold">Oyeindenyifa Diegbegha</p>
                 <p className="text-faded-black text-xl">Manager</p>
               </div>
             </div>
