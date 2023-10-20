@@ -6,7 +6,7 @@ import { fadeIn } from "../variants";
 
 const About = () => {
   return (
-    <div className="overflow-x-hidden bg-white">
+    <div name="about" className="overflow-x-hidden bg-white">
       <div className="max-w-[85%] w-full m-auto">
         <div className="w-full lg:flex items-center text-center lg:text-start pt-32 pb-20">
           <motion.div 

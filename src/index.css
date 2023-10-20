@@ -17,10 +17,11 @@ code {
 }
 .scroll{
   margin-bottom: 3rem!important;
-  background: linear-gradient(60deg, #5572c1 10%, #ee6055);
+  background: linear-gradient(60deg, gold 10%, #ee6055);
   border-radius: 10px;
   height: 50px;
   width: 50px;
+  
 
 
 }

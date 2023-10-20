@@ -10,7 +10,7 @@ const Prototype = () => {
   }
 
   return (
-    <div className="relative isolate overflow-hidden bg-main-color h-screen flex">
+    <div name="contact" className="relative isolate overflow-hidden bg-main-color h-screen flex">
       <img src={Book} alt="" className="absolute -z-10 bottom-10 -left-48 drop-shadow-xl" />
       <img src={Flower} alt="" className="absolute -z-10 -bottom-40 -right-60 md:-right-40 mix-blend-soft-light" />
       <div className="absolute -z-20 -bottom-32 drop-shadow-xl">

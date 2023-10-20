@@ -7,6 +7,9 @@ import {
 } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
+import {RiTwitterXFill} from 'react-icons/ri'
+
 
 const Footer = () => {
   const handleClick = (e) => {
@@ -32,8 +35,11 @@ const Footer = () => {
           <div className="flex gap-5 text-2xl">
             <BiLogoFacebook className="hover:text-default cursor-pointer" />
             <BiLogoInstagram className="hover:text-default cursor-pointer" />
-            <BiLogoTwitter className="hover:text-default cursor-pointer" />
+            <RiTwitterXFill className="hover:text-default cursor-pointer" />
+            <a href="https://www.linkedin.com/company/27037956/admin/feed/posts/">
             <BiLogoLinkedin className="hover:text-default cursor-pointer" />
+
+            </a>
           </div>
         </motion.div>
 
@@ -46,10 +52,11 @@ const Footer = () => {
         >
           <h1 className="text-2xl font-bold border-b pb-5">Useful Links</h1>
           <ul className="list-disc list-inside text-xl font-semibold space-y-3">
-            <li className="hover:text-default cursor-pointer">Home</li>
-            <li className="hover:text-default cursor-pointer">About</li>
-            <li className="hover:text-default cursor-pointer">Services</li>
-            <li className="hover:text-default cursor-pointer">Contact Us</li>
+
+            <li className="hover:text-default cursor-pointer"><Link to="home" smooth={true} duration={500}>Home</Link></li>
+            <li className="hover:text-default cursor-pointer"><Link to="about" smooth={true} duration={500}>About</Link></li>
+            <li className="hover:text-default cursor-pointer"><Link to="services" smooth={true} duration={500}>Services</Link></li>
+            <li className="hover:text-default cursor-pointer"><Link to="contact" smooth={true} duration={500}>Contact Us</Link></li>
             <li className="hover:text-default cursor-pointer">Newsletter</li>
           </ul>
         </motion.div>

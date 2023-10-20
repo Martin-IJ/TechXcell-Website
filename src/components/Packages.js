@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 
 const Packages = () => {
   return (
-    <div className="bg-white py-20 overflow-hidden">
+    <div name='services' className="bg-white py-20 overflow-hidden">
       <div className="max-w-[85%] w-full m-auto text-center space-y-7">
         <motion.h1
           variants={fadeIn("down", 0.3)}

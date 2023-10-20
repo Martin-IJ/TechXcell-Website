@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import Logo from "../assets/IMG_8764.PNG";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
+
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
     <div className="sticky z-40 inset-x-0 top-0 nav-container flex justify-center bg-[rgba(22,24,35,0.7)] backdrop-blur-lg border-b">
   
       <div className="max-w-[85%] w-[100%] flex justify-between items-center py-5 text-white">
-        <Link to="/">
+        <Link to="home" smooth={true} duration={500}>
           <img src={Logo} alt="logo" className="w-[150px]" />
         </Link>
         <div>
@@ -33,30 +34,31 @@ const Navbar = () => {
                 : "hidden"
             }`}
           >
-            <NavLink to="/" className="w-full lg:w-auto" onClick={closeNavbar}>
-              <li className="py-5 w-full">Home</li>
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="w-full lg:w-auto"
+            <Link to="home" smooth={true} duration={500} className="w-full lg:w-auto cursor-pointer" onClick={closeNavbar}>
+              <li className="py-5 w-full hover:text-xl hover:text-red-400">Home</li>
+            </Link>
+            <Link
+              to="about"
+              smooth={true} duration={500}
+              className="w-full lg:w-auto cursor-pointer"
               onClick={closeNavbar}
             >
-              <li className="py-5 w-full">About Us</li>
-            </NavLink>
-            <NavLink
-              to="/services"
-              className="w-full lg:w-auto"
+              <li className="py-5 w-full hover:text-xl hover:text-red-400">About Us</li>
+            </Link>
+            <Link
+              to="services"
+              className="w-full lg:w-auto cursor-pointer"
               onClick={closeNavbar}
             >
-              <li className="py-5 w-full">Services</li>
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="w-full lg:w-auto"
+              <li className="py-5 w-full hover:text-xl hover:text-red-400">Services</li>
+            </Link>
+            <Link
+              to="contact"
+              className="w-full lg:w-auto cursor-pointer"
               onClick={closeNavbar}
             >
-              <li className="py-5 w-full">Contact Us</li>
-            </NavLink>
+              <li className="py-5 w-full hover:text-xl hover:text-red-400">Contact Us</li>
+            </Link>
           </ul>
         </div>
       </div>

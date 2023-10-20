@@ -2,10 +2,15 @@ import React from "react";
 import Laptop from "../assets/macbook.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import ScrollToTop from "react-scroll-to-top";
+
 
 const Banner = () => {
   return (
-    <div className="relative isolate bg-main-color flex items-center overflow-hidden">
+    <div name='home' className="relative isolate bg-main-color flex items-center overflow-hidden">
+              <ScrollToTop className='scroll' smooth top= '20'
+           width='40px'
+            />
       <div className="absolute -z-20 -bottom-32 drop-shadow-xl">
         <h1 className=" text-[#161823] drop-shadow-lg text-center text-[20rem] font-black">
           TechXcell <br /> SOLUTION
