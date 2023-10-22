@@ -4,7 +4,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-scroll";
 
-
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -18,10 +17,9 @@ const Navbar = () => {
 
   return (
     <div className="sticky z-40 inset-x-0 top-0 nav-container flex justify-center bg-[rgba(22,24,35,0.7)] backdrop-blur-lg border-b">
-  
       <div className="max-w-[85%] w-[100%] flex justify-between items-center py-5 text-white">
         <Link to="home" smooth={true} duration={500}>
-          <img src={Logo} alt="logo" className="w-[150px]" />
+          <img src={Logo} alt="logo" className="w-[150px] cursor-pointer" />
         </Link>
         <div>
           <div onClick={handleClick} className="lg:hidden text-2xl">
@@ -34,30 +32,47 @@ const Navbar = () => {
                 : "hidden"
             }`}
           >
-            <Link to="home" smooth={true} duration={500} className="w-full lg:w-auto cursor-pointer" onClick={closeNavbar}>
-              <li className="py-5 w-full hover:text-xl hover:text-red-400">Home</li>
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="w-full lg:w-auto cursor-pointer"
+              onClick={closeNavbar}
+            >
+              <li className="py-5 w-full text-lg hover:text-red-400">Home</li>
             </Link>
             <Link
               to="about"
-              smooth={true} duration={500}
+              smooth={true}
+              duration={500}
               className="w-full lg:w-auto cursor-pointer"
               onClick={closeNavbar}
             >
-              <li className="py-5 w-full hover:text-xl hover:text-red-400">About Us</li>
-            </Link>
-            <Link
-              to="services"
-              className="w-full lg:w-auto cursor-pointer"
-              onClick={closeNavbar}
-            >
-              <li className="py-5 w-full hover:text-xl hover:text-red-400">Services</li>
+              <li className="py-5 w-full text-lg hover:text-red-400">
+                About Us
+              </li>
             </Link>
             <Link
               to="contact"
+              smooth={true}
+              duration={500}
               className="w-full lg:w-auto cursor-pointer"
               onClick={closeNavbar}
             >
-              <li className="py-5 w-full hover:text-xl hover:text-red-400">Contact Us</li>
+              <li className="py-5 w-full text-lg hover:text-red-400">
+                Contact Us
+              </li>
+            </Link>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="w-full lg:w-auto cursor-pointer"
+              onClick={closeNavbar}
+            >
+              <li className="py-5 w-full text-lg hover:text-red-400">
+                Services
+              </li>
             </Link>
           </ul>
         </div>

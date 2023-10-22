@@ -3,14 +3,15 @@ import Laptop from "../assets/macbook.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import ScrollToTop from "react-scroll-to-top";
-
+import { Link } from "react-scroll";
 
 const Banner = () => {
   return (
-    <div name='home' className="relative isolate bg-main-color flex items-center overflow-hidden">
-              <ScrollToTop className='scroll' smooth top= '20'
-           width='40px'
-            />
+    <div
+      name="home"
+      className="relative isolate bg-main-color flex items-center overflow-hidden"
+    >
+      <ScrollToTop className="scroll" smooth top="20" width="40px" />
       <div className="absolute -z-20 -bottom-32 drop-shadow-xl">
         <h1 className=" text-[#161823] drop-shadow-lg text-center text-[20rem] font-black">
           TechXcell <br /> SOLUTION
@@ -46,15 +47,17 @@ const Banner = () => {
           Our web design company specializes in the Professional creation of
           unique site the converts visitors to customers
         </motion.p>
-        <motion.button
-          variants={fadeIn("right", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="default-border"
-        >
-          Read More
-        </motion.button>
+        <Link to="whypage" smooth={true} duration={500}>
+          <motion.button
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.7 }}
+            className="default-border"
+          >
+            Read More
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

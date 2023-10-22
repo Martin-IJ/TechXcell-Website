@@ -7,31 +7,17 @@ import { HiOutlineRocketLaunch } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-
 const HowPage = () => {
   return (
     <div className="bg-white py-20 overflow-hidden">
-   
       <div className="max-w-[85%] w-full m-auto text-center space-y-7">
-        <motion.h1
-          variants={fadeIn("down", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text-5xl"
-        >
+        <h1 className="text-5xl">
           How It Is <span className="text-default">Going</span>
-        </motion.h1>
-        <motion.p
-          variants={fadeIn("down", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="max-w-[560px] w-full m-auto text-faded-black"
-        >
+        </h1>
+        <p className="max-w-[560px] w-full m-auto text-faded-black">
           We offer professional web design services at affordable rates to help
           your business attract more visitors and keep them on your site!
-        </motion.p>
+        </p>
         <div className="relative isolate overflow-hidden flex flex-wrap gap-10 justify-between">
           <p className="absolute hidden md:block overflow-hidden statistics-text-shadow text-white -z-10 top-0 -mt-24 left-10 text-[15rem] lg:text-[24rem] font-black">
             STEPS
@@ -50,7 +36,7 @@ const HowPage = () => {
             <p className="text-xl font-semibold">Info Gathering</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}

@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 
 const Packages = () => {
   return (
-    <div name='services' className="bg-white py-20 overflow-hidden">
+    <div name="services" className="bg-white py-20 overflow-hidden">
       <div className="max-w-[85%] w-full m-auto text-center space-y-7">
         <motion.h1
           variants={fadeIn("down", 0.3)}
@@ -28,13 +28,7 @@ const Packages = () => {
           sites.
         </motion.p>
         <div className="flex flex-wrap justify-center lg:justify-between gap-10">
-          <motion.div
-            variants={fadeIn("right", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#F6F7FB]"
-          >
+          <div className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#F6F7FB]">
             <h1 className="absolute -z-10 top-56 -left-3 text-[#F6F7FB] drop-shadow-xl rotate-90 text-[9rem] font-black">
               <span className="drop-shadow-md">LANDING</span>
             </h1>
@@ -62,14 +56,8 @@ const Packages = () => {
             <div className="w-full flex justify-center">
               <button className="packages-border">Select Plan</button>
             </div>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("up", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#31333E] text-white"
-          >
+          </div>
+          <div className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#31333E] text-white">
             <h1 className="absolute -z-10 top-80 -left-40 text-[#31333E] drop-shadow-xl rotate-90 text-[9rem] font-black">
               <span className="drop-shadow-md">APPLICATION</span>
             </h1>
@@ -100,14 +88,8 @@ const Packages = () => {
             <div className="w-full flex justify-center">
               <button className="packages-border">Select Plan</button>
             </div>
-          </motion.div>
-          <motion.div
-            variants={fadeIn("left", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
-            className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#F6F7FB]"
-          >
+          </div>
+          <div className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#F6F7FB]">
             <h1 className="absolute -z-10 top-80 -left-40 text-[#F6F7FB] drop-shadow-xl rotate-90 text-[9rem] font-black">
               <span className="drop-shadow-md">eCOMMERCE</span>
             </h1>
@@ -144,7 +126,7 @@ const Packages = () => {
             <div className="w-full flex justify-center">
               <button className="packages-border">Select Plan</button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>

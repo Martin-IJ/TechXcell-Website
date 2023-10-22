@@ -7,27 +7,15 @@ import { fadeIn } from "../variants";
 
 const WhyPage = () => {
   return (
-    <div className="bg-white overflow-hidden">
+    <div name="whypage" className="bg-white overflow-hidden">
       <div className="max-w-[85%] w-full m-auto text-center py-20 flex flex-col gap-10">
-        <motion.h1
-          variants={fadeIn("down", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text-5xl"
-        >
+        <h1 className="text-5xl">
           Why <span className="text-default">Choose</span> Us
-        </motion.h1>
-        <motion.p
-          variants={fadeIn("down", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="max-w-[560px] w-full m-auto text-faded-black"
-        >
+        </h1>
+        <p className="max-w-[560px] w-full m-auto text-faded-black">
           Biggest brands in the automotive industry recommend our company as a
           reliable corporate website developer
-        </motion.p>
+        </p>
         <div className="flex justify-center lg:justify-between flex-wrap gap-10">
           <motion.div
             variants={fadeIn("right", 0.3)}
@@ -46,7 +34,7 @@ const WhyPage = () => {
             </p>
           </motion.div>
           <motion.div
-            variants={fadeIn("up", 0.3)}
+            variants={fadeIn("", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}

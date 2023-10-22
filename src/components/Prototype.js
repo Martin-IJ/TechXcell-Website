@@ -1,51 +1,52 @@
 import React from "react";
-import Book from '../assets/book.png'
-import Flower from '../assets/flower.png'
+import Book from "../assets/book.png";
+import Flower from "../assets/flower.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Prototype = () => {
   const handleClick = (e) => {
     e.preventDefault();
-  }
+  };
 
   return (
-    <div name="contact" className="relative isolate overflow-hidden bg-main-color h-screen flex">
-      <img src={Book} alt="" className="absolute -z-10 bottom-10 -left-48 drop-shadow-xl" />
-      <img src={Flower} alt="" className="absolute -z-10 -bottom-40 -right-60 md:-right-40 mix-blend-soft-light" />
+    <div
+      name="contact"
+      className="relative isolate overflow-hidden bg-main-color py-24 flex"
+    >
+      <img
+        src={Book}
+        alt=""
+        className="absolute -z-10 bottom-10 -left-48 drop-shadow-xl"
+      />
+      <img
+        src={Flower}
+        alt=""
+        className="absolute -z-10 -bottom-40 -right-60 md:-right-40 mix-blend-soft-light"
+      />
       <div className="absolute -z-20 -bottom-32 drop-shadow-xl">
         <h1 className=" text-[#161823] drop-shadow-lg text-center text-[20rem] font-black">
           CREATIVE <br /> SOLUTION
         </h1>
       </div>
-      <div className="max-w-[85%] w-full space-y-10 m-auto text-center text-white">
-        <motion.h1
-          variants={fadeIn("down", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="text-5xl"
-        >
+      <motion.div
+        variants={fadeIn("", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="max-w-[85%] w-full space-y-10 m-auto text-center text-white"
+      >
+        <h1 className="text-5xl">
           Get a <span className="text-default">Free</span> Prototype <br /> of
           Your Future Website!
-        </motion.h1>
-        <motion.p
-          variants={fadeIn("down", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="max-w-[600px] w-full m-auto"
-        >
+        </h1>
+        <p className="max-w-[600px] w-full m-auto">
           Send your requirements for a website, we will research your
           specification, create a prototype of the website for free and sed a
           result to you!
-        </motion.p>
+        </p>
 
-        <motion.form
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+        <form
           action=""
           onSubmit={handleClick}
           className="space-y-7 max-w-[600px] w-full m-auto text-white"
@@ -70,8 +71,8 @@ const Prototype = () => {
           <button type="submit" className="default-border">
             Submit
           </button>
-        </motion.form>
-      </div>
+        </form>
+      </motion.div>
     </div>
   );
 };

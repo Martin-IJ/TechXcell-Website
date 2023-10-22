@@ -10,7 +10,7 @@ const NewsLetter = () => {
   return (
     <div className="newsletterBgr py-32 overflow-hidden">
       <motion.div
-        variants={fadeIn("down", 0.3)}
+        variants={fadeIn("", 0.3)}
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.7 }}
