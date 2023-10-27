@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import Book from "../assets/book.png";
 import Flower from "../assets/flower.png";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Prototype = () => {
+  const form = useRef();
+
   const handleClick = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_cnepgxk",
+        "template_x9o5rq2",
+        form.current,
+        "JXBIdaYYOh5NSEiz-"
+      )
+      .then(
+        (result) => {
+          alert("Email sent successfully");
+        },
+        (error) => {
+          alert("Error sending email");
+        }
+      );
+    e.target.reset();
   };
 
   return (
@@ -47,25 +67,30 @@ const Prototype = () => {
         </p>
 
         <form
-          action=""
+          ref={form}
           onSubmit={handleClick}
           className="space-y-7 max-w-[600px] w-full m-auto text-white"
         >
           <div className="w-full md:flex justify-between space-y-5 md:space-y-0 gap-5">
             <input
               type="text"
+              name="user_name"
+              required
               className="bg-inherit border rounded-[5.5rem] py-4 px-10 w-full md:w-[50%]"
               placeholder="First name"
             />
             <input
               type="text"
+              name="user_email"
+              required
               className="bg-inherit border rounded-[5.5rem] py-4 px-10 w-full md:w-[50%]"
-              placeholder="Phone number"
+              placeholder="Your Email"
             />
           </div>
           <textarea
             className="bg-inherit border rounded-3xl py-4 px-10 w-full text-white"
             placeholder="Message"
+            name="subject"
             rows="5"
           ></textarea>
           <button type="submit" className="default-border">
