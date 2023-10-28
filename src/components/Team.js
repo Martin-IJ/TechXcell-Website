@@ -30,6 +30,39 @@ const Team = () => {
           innovation to help you dominate the competition.
         </motion.p>
         <div className="flex flex-wrap justify-center lg:justify-between gap-10">
+          {/* Abiodun */}
+          <div className="abiodun-team-picture group max-w-[320px] w-full h-[500px] rounded-2xl">
+            <div className="group-hover:scale-100 scale-0 transition duration-700 ease-in-out flex flex-col items-end gap-5 justify-end h-full">
+              <div className="px-5 space-y-5">
+                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
+                  {/* <a href="" target="blank"> */}
+                  <FaGithub />
+                  {/* </a> */}
+                </div>
+                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
+                  {/* <a href="" target="blank"> */}
+                  <SiUpwork />
+                  {/* </a> */}
+                </div>
+                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
+                  {/* <a href="" target="blank"> */}
+                  <BiLogoLinkedin />
+                  {/* </a> */}
+                </div>
+                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
+                  {/* <a href="" target="blank"> */}
+                  <RiTwitterXFill />
+                  {/* </a> */}
+                </div>
+              </div>
+              <div className="flex flex-col justify-center w-full text-center bg-[#F6F7FB] rounded-b-2xl h-[30%]">
+                <p className="text-2xl font-semibold">Abiodun Ayinde</p>
+                <p className="text-faded-black text-xl">Project Manager</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Martins */}
           <div className="martins-team-picture group max-w-[320px] w-full h-[500px] rounded-2xl">
             <div className="group-hover:scale-100 scale-0 transition duration-700 ease-in-out flex flex-col items-end gap-5 justify-end h-full">
               <div className="px-5 space-y-5">
@@ -68,36 +101,8 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className="abiodun-team-picture group max-w-[320px] w-full h-[500px] rounded-2xl">
-            <div className="group-hover:scale-100 scale-0 transition duration-700 ease-in-out flex flex-col items-end gap-5 justify-end h-full">
-              <div className="px-5 space-y-5">
-                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  {/* <a href="" target="blank"> */}
-                  <FaGithub />
-                  {/* </a> */}
-                </div>
-                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  {/* <a href="" target="blank"> */}
-                  <SiUpwork />
-                  {/* </a> */}
-                </div>
-                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  {/* <a href="" target="blank"> */}
-                  <BiLogoLinkedin />
-                  {/* </a> */}
-                </div>
-                <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  {/* <a href="" target="blank"> */}
-                  <RiTwitterXFill />
-                  {/* </a> */}
-                </div>
-              </div>
-              <div className="flex flex-col justify-center w-full text-center bg-[#F6F7FB] rounded-b-2xl h-[30%]">
-                <p className="text-2xl font-semibold">Abiodun Ayinde</p>
-                <p className="text-faded-black text-xl">Project Manager</p>
-              </div>
-            </div>
-          </div>
+
+          {/* Denyefa */}
           <div className="denyefa-team-picture group max-w-[320px] w-full h-[500px] rounded-2xl">
             <div className="group-hover:scale-100 scale-0 transition duration-700 ease-in-out flex flex-col items-end gap-5 justify-end h-full">
               <div className="px-5 space-y-5">
