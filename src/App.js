@@ -10,10 +10,12 @@ import Team from './components/Team';
 import Packages from './components/Packages';
 import NewsLetter from './components/NewsLetter';
 import Footer from './components/Footer';
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
     <div className="bg-main-color">
+      <ScrollToTop className="scroll" smooth top="20" width="20px" color="white" />
       <Navbar />
       <Banner />
       <About />

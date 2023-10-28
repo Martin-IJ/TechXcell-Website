@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky z-40 inset-x-0 top-0 nav-container flex justify-center bg-[rgba(22,24,35,0.7)] backdrop-blur-lg border-b">
-      <div className="max-w-[85%] w-[100%] flex justify-between items-center py-5 text-white">
+      <div className="max-w-[85%] w-[100%] flex justify-between items-center py-4 text-white">
         <Link to="home" smooth={true} duration={500}>
           <img src={Logo} alt="logo" className="w-[150px] cursor-pointer" />
         </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
           <ul
             className={`lg:flex items-center lg:space-x-12 ${
               navbar
-                ? "absolute z-50 right-0 top-[4.6rem] max-w-[300px] text-lg w-full bg-[rgba(22,24,35,0.9)] backdrop-blur-lg divide-y-2 p-10 flex flex-col items-baseline mt-1"
+                ? "absolute z-50 right-0 top-[4.6rem] max-w-[300px] text-lg w-full bg-[rgba(22,24,35,0.5)] backdrop-blur-lg divide-y-2 p-10 flex flex-col items-baseline mt-1"
                 : "hidden"
             }`}
           >
