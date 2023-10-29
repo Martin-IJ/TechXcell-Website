@@ -11,6 +11,7 @@ import Packages from './components/Packages';
 import NewsLetter from './components/NewsLetter';
 import Footer from './components/Footer';
 import ScrollToTop from "react-scroll-to-top";
+import OurServices from './components/OurServices';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Banner />
       <About />
       <Statistics />
+      <OurServices />
       <WhyPage />
       <Prototype />
       <HowPage />

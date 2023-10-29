@@ -1,17 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import {
   BiLogoFacebook,
   BiLogoLinkedin,
   BiLogoInstagram,
 } from "react-icons/bi";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 import { RiTwitterXFill } from "react-icons/ri";
 
 const Footer = () => {
+  const form = useRef();
+
   const handleClick = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_cnepgxk",
+        "template_x9o5rq2",
+        form.current,
+        "JXBIdaYYOh5NSEiz-"
+      )
+      .then(
+        (result) => {
+          alert("Email sent successfully");
+        },
+        (error) => {
+          alert("Error sending email");
+        }
+      );
+    e.target.reset();
   };
   return (
     <footer className="overflow-hidden">
@@ -84,10 +104,11 @@ const Footer = () => {
           <p className="text-[#7E8499]">
             Join our mailing list to receive news and announcements
           </p>
-          <form onSubmit={handleClick} className="space-y-5">
+          <form ref={form} onSubmit={handleClick} className="space-y-5">
             <input
               type="email"
               placeholder="Your Email"
+              name="user_email"
               className="bg-transparent border rounded-[4rem] w-full p-3"
             />
             <button type="submit" className="go-border p-3 w-full">
