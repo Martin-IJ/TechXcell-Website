@@ -49,22 +49,28 @@ const Prototype = () => {
           CREATIVE <br /> SOLUTION
         </h1>
       </div>
-      <motion.div
-        variants={fadeIn("", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="max-w-[85%] w-full space-y-10 m-auto text-center text-white"
-      >
-        <h1 className="text-5xl">
+      <div className="max-w-[85%] w-full space-y-10 m-auto text-center text-white">
+        <motion.h1
+          variants={fadeIn("", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="text-5xl"
+        >
           Get a <span className="text-default">Free</span> Prototype <br /> of
           Your Future Website!
-        </h1>
-        <p className="max-w-[600px] w-full m-auto">
+        </motion.h1>
+        <motion.p
+          variants={fadeIn("", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="max-w-[600px] w-full m-auto"
+        >
           Send your requirements for a website, we will research your
           specification, create a prototype of the website for free and sed a
           result to you!
-        </p>
+        </motion.p>
 
         <form
           ref={form}
@@ -97,7 +103,7 @@ const Prototype = () => {
             Submit
           </button>
         </form>
-      </motion.div>
+      </div>
     </div>
   );
 };
