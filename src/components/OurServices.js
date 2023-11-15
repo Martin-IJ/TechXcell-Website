@@ -1,19 +1,11 @@
 import React from "react";
 import ourServices from "../db/OurServicesDb";
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 
 const OurServices = () => {
   return (
     <div className="bg-white py-20 overflow-hidden">
       <div className="max-w-[85%] w-full m-auto text-center space-y-7">
-        <motion.div
-          variants={fadeIn("", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
-          className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 m-auto"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 m-auto">
           {ourServices.map((services) => {
             const { id, title, image } = services;
             return (
@@ -34,7 +26,7 @@ const OurServices = () => {
               </div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
     </div>
   );
