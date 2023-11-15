@@ -35,9 +35,9 @@ const Team = () => {
             <div className="group-hover:scale-100 scale-0 transition duration-700 ease-in-out flex flex-col items-end gap-5 justify-end h-full">
               <div className="px-5 space-y-5">
                 <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  {/* <a href="" target="blank"> */}
+                  <a href="https://github.com/TechXcellcloud" target="blank">
                   <FaGithub />
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
                   {/* <a href="" target="blank"> */}
@@ -45,19 +45,19 @@ const Team = () => {
                   {/* </a> */}
                 </div>
                 <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  {/* <a href="" target="blank"> */}
+                  <a href="https://www.linkedin.com/in/abiodun-ayinde-22abba290/" target="blank">
                   <BiLogoLinkedin />
-                  {/* </a> */}
+                  </a>
                 </div>
                 <div className="ease-in duration-300 w-[50px] h-[50px] bg-default hover:bg-[#F6F7FB] flex items-center justify-center rounded-full text-[#F6F7FB] hover:text-default text-3xl">
-                  {/* <a href="" target="blank"> */}
+                  <a href="https://twitter.com/Blackmadebanana" target="blank">
                   <RiTwitterXFill />
-                  {/* </a> */}
+                  </a>
                 </div>
               </div>
               <div className="flex flex-col justify-center w-full text-center bg-[#F6F7FB] rounded-b-2xl h-[30%]">
                 <p className="text-2xl font-semibold">Abiodun Ayinde</p>
-                <p className="text-faded-black text-xl">Project Manager</p>
+                <p className="text-faded-black text-xl">CEO / Managing Director</p>
               </div>
             </div>
           </div>
@@ -97,7 +97,7 @@ const Team = () => {
               </div>
               <div className="flex flex-col justify-center w-full text-center bg-[#F6F7FB] rounded-b-2xl h-[30%]">
                 <p className="text-2xl font-semibold">Martins Ohez</p>
-                <p className="text-faded-black text-xl">Web Developer</p>
+                <p className="text-faded-black text-xl">COO / Software Developer</p>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Team = () => {
               </div>
               <div className="flex flex-col justify-center w-full text-center bg-[#F6F7FB] rounded-b-2xl h-[30%]">
                 <p className="text-2xl font-semibold">Oyeindenyifa Diegbegha</p>
-                <p className="text-faded-black text-xl">Web Developer</p>
+                <p className="text-faded-black text-xl">CTO / Software Developer</p>
               </div>
             </div>
           </div>

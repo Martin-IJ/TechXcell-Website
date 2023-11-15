@@ -48,7 +48,7 @@ const Footer = () => {
             We have much planned for the future, working with great clients and
             continued software development
           </p>
-          <p className="footer-small-circle">+234 111 111 1111</p>
+          <p className="footer-small-circle">+234 704 684 6121</p>
           <p className="footer-small-circle">info@techxcell.com</p>
           <div className="flex gap-5 text-2xl">
             <BiLogoFacebook className="hover:text-default cursor-pointer" />
