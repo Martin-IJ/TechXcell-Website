@@ -37,10 +37,10 @@ const Packages = () => {
               $700. <span className="text-2xl font-bold align-top">99</span>
             </h2>
             <div className="space-y-5 text-faded-black">
-              <p className="flex items-center">
+              {/* <p className="flex items-center">
                 <BsCheckLg className="text-green-500 text-lg mr-3" /> Time - 7
                 days
-              </p>
+              </p> */}
               <p className="flex items-center">
                 <BsCheckLg className="text-green-500 text-lg mr-3" /> 5 - 14
                 blocks
@@ -48,6 +48,10 @@ const Packages = () => {
               <p className="flex items-center">
                 <BsCheckLg className="text-green-500 text-lg mr-3" /> Social
                 links
+              </p>
+              <p className="flex items-center">
+                <BsCheckLg className="text-green-500 text-lg mr-3" />{" "}
+                Photo gallery
               </p>
               <p>-</p>
               <p>-</p>
@@ -57,6 +61,7 @@ const Packages = () => {
               <button className="packages-border">Select Plan</button>
             </div>
           </div>
+
           <div className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#31333E] text-white">
             <h1 className="absolute -z-10 top-80 -left-40 text-[#31333E] drop-shadow-xl rotate-90 text-[9rem] font-black">
               <span className="drop-shadow-md">APPLICATION</span>
@@ -66,10 +71,10 @@ const Packages = () => {
               $1100. <span className="text-2xl font-bold align-top">99</span>
             </h2>
             <div className="space-y-5">
-              <p className="flex items-center">
+              {/* <p className="flex items-center">
                 <BsCheckLg className="text-green-500 text-lg mr-3" /> Time - 7
                 days
-              </p>
+              </p> */}
               <p className="flex items-center">
                 <BsCheckLg className="text-green-500 text-lg mr-3" /> 5 - 14
                 blocks
@@ -89,6 +94,7 @@ const Packages = () => {
               <button className="packages-border">Select Plan</button>
             </div>
           </div>
+
           <div className="relative isolate hover:scale-110 ease-in duration-200 overflow-hidden max-w-[360px] w-full h-[600px] py-2 px-10 space-y-10 text-start rounded-xl bg-[#F6F7FB]">
             <h1 className="absolute -z-10 top-80 -left-40 text-[#F6F7FB] drop-shadow-xl rotate-90 text-[9rem] font-black">
               <span className="drop-shadow-md">eCOMMERCE</span>
@@ -98,10 +104,10 @@ const Packages = () => {
               $1500. <span className="text-2xl font-bold align-top">99</span>
             </h2>
             <div className="space-y-5 text-faded-black">
-              <p className="flex items-center">
+              {/* <p className="flex items-center">
                 <BsCheckLg className="text-green-500 text-lg mr-3" /> Time - 7
                 days
-              </p>
+              </p> */}
               <p className="flex items-center">
                 <BsCheckLg className="text-green-500 text-lg mr-3" /> 5 - 14
                 blocks
