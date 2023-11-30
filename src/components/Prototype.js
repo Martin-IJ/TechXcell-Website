@@ -68,8 +68,8 @@ const Prototype = () => {
           className="max-w-[600px] w-full m-auto"
         >
           Send your requirements for a website, we will research your
-          specification, create a prototype of the website for free and sed a
-          result to you!
+          specification, create a prototype of the website for free and send a
+          sample to you!
         </motion.p>
 
         <form

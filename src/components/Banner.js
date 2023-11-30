@@ -43,7 +43,7 @@ const Banner = () => {
           className="text-center md:text-start text-slate-400 max-w-[410px]"
         >
           Our web design company specializes in the Professional creation of
-          unique site the converts visitors to customers
+          unique website that converts visitors to customers
         </motion.p>
         <Link to="whypage" smooth={true} duration={500}>
           <motion.button
